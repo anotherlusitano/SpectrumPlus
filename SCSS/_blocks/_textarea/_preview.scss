@@ -3,7 +3,6 @@
   .cm-contentContainer {
   max-width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
 
   .cm-content {
@@ -15,8 +14,6 @@
   .frontmatter-container,
   .block-language-tasks {
     max-width: var(--max-width-text);
-    width: 100%;
-    min-width: 300px;
   }
 
   > table,
