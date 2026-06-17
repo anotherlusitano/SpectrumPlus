@@ -23,6 +23,11 @@ function createSnippetArray () {
   })
 }
 
+if (process.env.TESTING_VAULT_PATH === undefined) {
+  console.error("TESTING_VAULT_PATH is not set in the environment variables.");
+  process.exit(1);
+}
+
 const testingVaultPath = path.join(
   process.env.TESTING_VAULT_PATH,
   ".obsidian",
